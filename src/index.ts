@@ -28,7 +28,7 @@ export const calculateDueDate = (
     dueHour >= workEndHour
   ) {
     throw new Error(
-      "Submit date time must be within working hours (9AM-5PM Monday to Friday)"
+      `Submit date time must be within working hours (${schedule.workStartHour}:00 - ${schedule.workEndHour}:00 Monday to Friday)`
     );
   }
 

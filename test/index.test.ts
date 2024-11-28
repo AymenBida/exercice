@@ -26,7 +26,7 @@ describe("calculateDueDate", () => {
     expect(() =>
       calculateDueDate(submitDateTime, turnaroundTimeInHours)
     ).toThrow(
-      "Submit date time must be within working hours (9AM-5PM Monday to Friday)"
+      "Submit date time must be within working hours (9:00 - 17:00 Monday to Friday)"
     );
   });
 
@@ -36,7 +36,7 @@ describe("calculateDueDate", () => {
     expect(() =>
       calculateDueDate(submitDateTime, turnaroundTimeInHours)
     ).toThrow(
-      "Submit date time must be within working hours (9AM-5PM Monday to Friday)"
+      "Submit date time must be within working hours (9:00 - 17:00 Monday to Friday)"
     );
   });
 
